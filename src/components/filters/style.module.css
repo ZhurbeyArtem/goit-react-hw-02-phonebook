@@ -1,11 +1,11 @@
-.container{
+.container {
   width: 280px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
-.formLabel{
+.formLabel {
   display: flex;
   flex-direction: column;
   gap: 5px;
