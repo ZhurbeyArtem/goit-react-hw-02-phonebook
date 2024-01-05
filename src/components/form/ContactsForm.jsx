@@ -12,7 +12,7 @@ class ContactsForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    const {name, phone} = this.state
+    const { name, phone } = this.state;
     this.props.addUser(name, phone);
     this.setState({ name: '', phone: '' });
     e.target.reset();

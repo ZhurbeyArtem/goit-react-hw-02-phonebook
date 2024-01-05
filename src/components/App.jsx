@@ -60,7 +60,10 @@ export class App extends Component {
 
         <h2>Contacts</h2>
         <Filter filterFunc={this.setFilter} />
-        <ContactList users={this.filteredContacts()} removeUser={this.removeUser} />
+        <ContactList
+          users={this.filteredContacts()}
+          removeUser={this.removeUser}
+        />
       </div>
     );
   }
