@@ -4,6 +4,8 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { nanoid } from 'nanoid';
 import Filter from './filters/Filter';
 import ContactList from './contacts/ContactList';
+import s from 'index.module.css'
+
 export class App extends Component {
   state = {
     contacts: [
@@ -44,7 +46,7 @@ export class App extends Component {
   render() {
     const { contacts, filter } = this.state;
     return (
-      <div>
+      <div className={s.app}>
         <h1>Phonebook</h1>
         <ContactsForm addUser={this.addUser} />
 
